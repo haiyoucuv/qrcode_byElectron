@@ -1,0 +1,43 @@
+{
+    "name": "get_your_qr",
+    "version": "1.0.0",
+    "description": "By haiyoucuv",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "win": "electron-builder --win --x64",
+        "mac": "electron-builder --mac --x64"
+    },
+    "build": {
+        "appId": "cn.haiyoucuv.GetYourQR",
+        "mac": {
+            "target": [
+                "dmg",
+                "zip"
+            ]
+        },
+        "win": {
+            "target": [
+                "nsis",
+                "zip"
+            ]
+        }
+    },
+    "repository": "https://github.com/haiyoucuv/qrcode_byElectron.git",
+    "keywords": [
+        "Electron",
+        "qrcode",
+        "qr",
+        "haiyoucuv"
+    ],
+    "author": "haiyoucuv",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^7.1.3",
+        "electron-builder": "^21.2.0",
+        "electron-packager": "^14.1.1"
+    },
+    "dependencies": {
+        "qr-image": "^3.2.0"
+    }
+}
