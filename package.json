@@ -26,7 +26,6 @@
         },
         "win": {
             "target": [
-                "nsis",
                 "zip"
             ],
             "icon": "icon.png"
